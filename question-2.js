@@ -11,7 +11,7 @@ async function getApi () {
         const response = await fetch(url);
         const result = await response.json();
         const resposnseResult = result.results
-        
+       
         gifContainer.classList.remove("hidden");
         
     //setinterval function to remove loading image while api call
