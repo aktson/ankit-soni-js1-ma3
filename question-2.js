@@ -19,22 +19,22 @@ async function getApi () {
        
         function removeGif ()  {
             //looping through api response
-            for (let i = 1; i < resposnseResult.length; i++) {
+            for (let i = 0; i < resposnseResult.length; i++) {
                 
                 gifContainer.classList.add("hidden");
                 tableContainer.classList.remove("hidden") 
                 
-                if(i === 10) { 
-                    break;
-                };
+                if (i === 8) break; 
+                
                 tableContainer.innerHTML += 
                    `<tr>
-                    <td>${i}</td>
+                    <td>${i+1}</td>
                     <td>${resposnseResult[i].name}</td>
                     <td>${resposnseResult[i].rating}</td>
                     <td>${resposnseResult[i].tags.length}</td>
                     </tr>`
-            clearInterval(intervalId);
+
+                clearInterval(intervalId);
             }
         }
    } 
