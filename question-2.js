@@ -19,7 +19,7 @@ async function getApi () {
        
         function removeGif ()  {
             //looping through api response
-            for (let i = 0; i < resposnseResult.length; i++) {
+            for (let i = 1; i < resposnseResult.length; i++) {
                 
                 gifContainer.classList.add("hidden");
                 tableContainer.classList.remove("hidden") 
@@ -29,7 +29,7 @@ async function getApi () {
                 };
                 tableContainer.innerHTML += 
                    `<tr>
-                    <td>${i+1}</td>
+                    <td>${i}</td>
                     <td>${resposnseResult[i].name}</td>
                     <td>${resposnseResult[i].rating}</td>
                     <td>${resposnseResult[i].tags.length}</td>
