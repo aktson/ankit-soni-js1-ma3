@@ -1,1 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Press+Start+2P&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jura", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+
+.gif-container img {
+  max-width: 100px;
+}
+.hidden {
+  display: none;
+}
+table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-collapse: collapse;
+  background-color: rgba(236, 232, 232, 0.2);
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  background-color: rgb(156, 245, 233);
+}
+td {
+  padding: 5px;
+}
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.error {
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 10px;
+}
