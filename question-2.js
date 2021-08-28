@@ -14,13 +14,12 @@ async function getApi () {
        
         gifContainer.classList.remove("hidden");
         
-    //setinterval function to remove loading image while api call
+    //setinterval function to remove loading gif while api call
         const intervalId = setInterval(removeGif,1000);
        
         function removeGif ()  {
             //looping through api response
             for (let i = 0; i < resposnseResult.length; i++) {
-                
                 gifContainer.classList.add("hidden");
                 tableContainer.classList.remove("hidden") 
                 
